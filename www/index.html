@@ -1,11 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Mi primer sitio con Vagrant</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      padding: 2rem;
+      background: #f7f9fc;
+      color: #222;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #0b5cff;
+    }
+
+    .welcome {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: transform 0.08s ease, box-shadow 0.08s ease;
+      text-decoration: none;
+      color: white;
+    }
+
+    .btn:active { transform: translateY(1px); }
+
+    /* Colores (puedes cambiarlos) */
+    .btn-user {
+      background: linear-gradient(135deg, #27ae60, #2ecc71); /* verde */
+      box-shadow: 0 6px 12px rgba(46, 204, 113, 0.18);
+    }
+
+    .btn-server {
+      background: linear-gradient(135deg, #ff6b6b, #ff8a65); /* salmón/rojo */
+      box-shadow: 0 6px 12px rgba(255, 107, 107, 0.18);
+    }
+
+    .small-link {
+      display:block;
+      margin-top: 1rem;
+      color:#555;
+      text-decoration: none;
+      font-size:0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>¡Hola desde Apache en la VM web!</h1>
-  <p>Este sitio está corriendo en la máquina virtual provisionada con Vagrant.</p>
-  <a href="info.php">Ver script en PHP</a>
+  <div class="container">
+    <h1>¡Hola desde Apache en la VM web!</h1>
+
+    <!-- Saludo personalizado -->
+    <p class="welcome">Bienvenido, <strong>David Barreto</strong></p>
+
+    <!-- Botones -->
+    <div class="buttons" role="group" aria-label="Acciones">
+      <!-- Si prefieres enlaces en lugar de redirección JS, cambia por <a class="btn btn-user" href="usuario.php">Ver usuario</a> -->
+      <button class="btn btn-user" type="button" onclick="location.href='usuario.php'">
+        Ver usuario
+      </button>
+
+      <button class="btn btn-server" type="button" onclick="location.href='info.php'">
+        Ver información del servidor
+      </button>
+    </div>
+    <a class="small-link" href="info.php">Ver script en PHP (info.php)</a>
+  </div>
 </body>
 </html>
