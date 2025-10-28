@@ -5,6 +5,7 @@ Vagrant.configure("2") do |config|
     web.vm.hostname = "web"
     web.vm.network "private_network", ip: "192.168.56.10"
     web.vm.provision "shell", path: "provision-web.sh"
+    web.vm.synced_folder "www", "/var/www/html"
   end
 
   # Máquina DB (reto)
