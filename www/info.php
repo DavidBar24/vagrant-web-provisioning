@@ -5,7 +5,7 @@ $user = getenv('DB_USER') ?: 'appuser';
 $password = getenv('DB_PASS') ?: 'apppassword';
 
 // DSN en formato estándar (pgsql:host=...;port=...;dbname=...)
-$dsn = "pgsql:host={$host};port={$port};dbname={$dbname};connect_timeout={$connect_timeout}";
+$dsn = "pgsql:host={$host};dbname={$dbname}";
 
 try {
     // Opciones PDO para mayor robustez (no cambian la funcionalidad)
