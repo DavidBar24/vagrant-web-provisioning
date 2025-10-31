@@ -1,10 +1,8 @@
 <?php
 $host = getenv('DB_HOST') ?: '192.168.56.11';
-$port = getenv('DB_PORT') ?: '5432';
 $dbname = getenv('DB_NAME') ?: 'tallerdb';
 $user = getenv('DB_USER') ?: 'appuser';
 $password = getenv('DB_PASS') ?: 'apppassword';
-$connect_timeout = getenv('DB_CONNECT_TIMEOUT') ?: 5;
 
 // DSN en formato estándar (pgsql:host=...;port=...;dbname=...)
 $dsn = "pgsql:host={$host};port={$port};dbname={$dbname};connect_timeout={$connect_timeout}";
