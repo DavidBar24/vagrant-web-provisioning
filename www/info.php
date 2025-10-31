@@ -1,5 +1,5 @@
 <?php
-$host = getenv('DB_HOST') ?: '192.168.56.13';
+$host = getenv('DB_HOST') ?: '192.168.56.11';
 $port = getenv('DB_PORT') ?: '5432';
 $dbname = getenv('DB_NAME') ?: 'tallerdb';
 $user = getenv('DB_USER') ?: 'appuser';
