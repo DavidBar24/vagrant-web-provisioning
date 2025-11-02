@@ -14,6 +14,6 @@
 <img width="652" height="572" alt="PHP" src="https://github.com/user-attachments/assets/ce654385-4d01-4e3e-b800-c499f5b99550" />
 
 ## Reto
-- Completar `provision-db.sh` para instalar PostgreSQL.
-- Crear una base de datos y tabla.
-- Conectar la página PHP a la base de datos y mostrar datos.
+- Completar `provision-db.sh` para instalar PostgreSQL. (Completado)
+- Crear una base de datos y tabla. (Completado)
+- Conectar la página PHP a la base de datos y mostrar datos. (Completado)
